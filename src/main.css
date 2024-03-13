@@ -1,3 +1,9 @@
 section.greeting h2.title {
     color: red;
 }
+
+div.todo-item{
+    border: 2px solid black;
+    min-height: 30px;
+    margin-bottom: 6px;
+} 
