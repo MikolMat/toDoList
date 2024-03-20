@@ -155,11 +155,57 @@ input:checked ~ .bubble::after{
 
 }
 
+.todo-list{
+    min-width: 800px;
+}
+
 .todo-list .todo-itemfalse{
     display: flex;
-    border: 2px solid black;
-    justify-content: flex-start;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    justify-content:center;
     align-items: center;
+    gap:60px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    min-width: 800px;
+}
+
+.todo-itemfalse .todo-content{
+    margin-left: 10px;
+}
+.todo-itemfalse .todo-content input{
+    display: block;
+    min-width: 500px;
+    font-size: 1.3rem;
+}
+
+.todo-itemfalse label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.todo-itemfalse label .bubble.bubble.business{
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.todo-itemfalse label .bubble.personal{
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.todo-itemfalse .action .delete{
+    background-color: var(--danger);
+}
+
+.todo-itemfalse .action .delete:hover{
+    cursor: pointer;
 }
 
 .todo-list .bubble.business{
